@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+main {
+    display: flex;
+    height: 100%;
+}
+
+.left-side {
+    flex: 1;
+    background: linear-gradient(to bottom left, #00A19B, #003B39); /* Specify the linear gradient colors */
+    padding: 20px;
+    text-align: center;
+}
+
+.text-container {
+    margin-bottom: 20px;
+}
+
+.nbquestion-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #FFF;
+    padding-top: 100px;
+}
+
+.realm-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 55px;
+    color: #A10006;
+}
+
+.adventure-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 39px;
+    margin-top: -50PX;
+    color: #A10006;
+}
+
+
+.quiz-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    color: #FFF;
+}
+
+
+.right-side {
+    flex: 1;
+    position: relative;
+    background-color: #E9F2F2;
+}
+
+
+.button-container {
+    position: absolute;
+    align-items: center;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+button {
+    background-color: #00A19B;
+    color: white;
+    padding: 15px 180px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.welcome-text,
+.realm-text,
+.adventure-text,
+.quiz-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the shadow values as needed */
+}
+

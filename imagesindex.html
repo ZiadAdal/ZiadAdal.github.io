@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1 Quiz</title>
+    <link rel="stylesheet" href="stylees.css">
+    <style>
+        /* Styles for the floating result window */
+        #resultWindow {
+            display: none;
+            border-radius: 5px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: #004777;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: center;
+        }
+        #resultWindow p {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            color: white;
+        }
+        #resultWindow button {
+            margin-right: 10px;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1em;
+            background-color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3 ease;
+        }
+        /* Style to dim the background when the result window is shown */
+        #quiz.dimmed {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+    <div id="quiz">
+        <div id="left-section">
+            <div id="quiz-header">
+                <p id="progress"></p>
+                <div id="imageContainer"></div> <!-- Container for image -->
+            </div>
+        </div>
+        <div id="right-section">
+            <div id="options">
+                <div class="option" id="optionA"></div>
+                <div class="option" id="optionB"></div>
+                <div class="option" id="optionC"></div>
+                <div class="option" id="optionD"></div>
+            </div>
+            <button id="nextButton">Next Question</button>
+        </div>
+    </div>
+    <div id="resultWindow">
+        <p id="resultText"></p>
+        <button id="nextButtonResult">Next</button>
+        <button id="tryAgainButton">Try Again</button>
+    </div>
+
+    <script src="images.js
+    "></script>
+</body>
+</html>

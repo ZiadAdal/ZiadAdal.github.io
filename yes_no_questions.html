@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes/No Quiz</title>
+    <link rel="stylesheet" href="stylees.css">
+</head>
+<body>
+    <div id="quiz">
+        <div id="left-section">
+            <div id="quiz-header">
+                <p id="progress"></p>
+                <h1 id="questionText"></h1>
+            </div>
+        </div>
+        <div id="right-section">
+            <div id="options">
+                <div class="option" id="optionYes">Yes</div>
+                <div class="option" id="optionNo">No</div>
+            </div>
+            <button id="nextButton">Next Question</button>
+        </div>
+    </div>
+
+    <div id="resultWindow" class="result-window">
+        <div id="resultText" class="result-text"></div>
+        <button id="restartButton" class="result-button">Restart</button>
+    </div>
+
+    <script src="yes_no.js"></script>
+</body>
+</html>
